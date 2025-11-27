@@ -1,0 +1,38 @@
+{
+  "name": "nudelsalat",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "server": "ts-node -P tsconfig.server.json server/index.ts",
+    "server:dev": "nodemon --exec 'ts-node -P tsconfig.server.json' server/index.ts",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.1.0",
+    "expo": "~54.0.25",
+    "expo-status-bar": "~3.0.8",
+    "express": "^4.21.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-web": "^0.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "@types/react": "~19.1.0",
+    "@types/react-dom": "~19.1.0",
+    "nodemon": "^3.0.2",
+    "prisma": "^6.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}
